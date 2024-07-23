@@ -1,0 +1,12 @@
+how to use angular web component in react:
+https://thalava.hashnode.dev/how-to-use-angular-web-components-in-react-js
+https://egghead.io/lessons/react-use-an-angular-component-inside-a-react-app-with-angular-elements
+
+vice-versa
+----
+https://mtalham.medium.com/build-web-component-with-react-and-use-it-in-an-angular-app-515c2fed6a53
+https://stackoverflow.com/questions/69837029/how-to-add-react-components-to-angular-project
+
+React Hook Forms:
+-----
+https://mtalham.medium.com/react-hook-forms-managing-forms-efficiently-at-scale-d3ed36a1009f

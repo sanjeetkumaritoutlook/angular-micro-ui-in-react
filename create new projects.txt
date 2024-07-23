@@ -1,0 +1,88 @@
+ng new micro-ui
+cd micro-ui
+ng s
+
+create new react project with typescript
+https://react.dev/learn/start-a-new-react-project
+
+Adding TypeScript to an existing React project 
+https://react.dev/learn/typescript
+npm install @types/react @types/react-dom
+
+Hooks 16.8
+functional component
+
+https://create-react-app.dev/docs/adding-typescript/
+npx create-react-app shell-react-application --template typescript
+
+cd shell-react-application
+npm start
+
+----
+
+without TS:
+https://create-react-app.dev/
+npx create-react-app my-app
+
+
+for next js
+npx create-next-app@latest
+
+------
+in angular
+------
+ng build
+creates dist folder
+----
+concat 
+https://stackoverflow.com/questions/52951945/node-concat-no-read-assets
+
+
+---------
+in React
+------------
+Property 'fluid-theme-provider' does not exist on type 'JSX.IntrinsicElements'.ts(2339)
+-----
+fix: https://stackoverflow.com/questions/37414304/typescript-complains-property-does-not-exist-on-type-jsx-intrinsicelements-whe
+https://stackoverflow.com/questions/37414304/typescript-complains-property-does-not-exist-on-type-jsx-intrinsicelements-whe
+
+------
+React may complain about intrinsic elements (we're working on some updates to the React utils to accept identifers, etc, but not done yet). You can work around that by spreading an object on each with the id;
+ 
+-----
+npm i @types/react@latest
+https://stackoverflow.com/questions/47694227/typescript-error-ts2339-property-span-does-not-exist-on-type-jsx-intrinsice
+https://stackoverflow.com/questions/55424417/typescript-error-property-does-not-exist-on-type-jsx-intrinsicelements-when
+
+
+
+----
+
+export default function FunctionalComponent() {
+    const someFunctionToBeInvoked = (value: any): void => {
+        console.log('Value Changed!', value);
+    }
+    return <div>
+        <FluidSelect {...{id: 'id-one'}} onValueChange={value => someFunctionToBeInvoked(value)} />
+        <FluidSelect {...{id: 'id-two'}} onValueChange={value => alert(value)} />
+    </div>
+}
+Then you can query with fluid-select#id-one for the first one, and fluid-select#id-two for the other.
+ 
+It's not ideal, but should work in the meantime.
+
+
+
+// enable this rule:
+"noImplicitAny": false
+
+https://stackoverflow.com/questions/47848778/parameter-implicitly-has-an-any-type
+----
+how to use web components in React:
+-----
+https://web-highlights.com/blog/how-to-use-web-components-in-react/
+
+
+react-scripts-ts
+--
+npm i react-scripts-ts

@@ -1,0 +1,11 @@
+<fluid-theme-provider [theme]="theme$ | async"></fluid-theme-provider>
+
+<fluid-header [links]="navLinks" (linkClicked)="navigate($event)"></fluid-header>
+
+<router-outlet></router-outlet>
+
+<fluid-footer>
+  <fluid-footer-content slot="footer-content">
+    &copy; 2020 Liberty Mutual Insurance, 175 Berkeley Street, Boston, MA 02116
+  </fluid-footer-content>
+</fluid-footer>

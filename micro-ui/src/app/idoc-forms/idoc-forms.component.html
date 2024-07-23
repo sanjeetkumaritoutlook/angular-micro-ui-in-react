@@ -1,0 +1,28 @@
+<fluid-text>I am a Micro UI forms component</fluid-text>
+<div *ngIf="isLoading">
+  <fluid-linear-progress theme="lm" override-global-theme="true" weight="heavy"></fluid-linear-progress>
+</div>
+<div style="margin-bottom: 20px;" *ngIf="!isLoading">
+  <fluid-form id="templateForm" #templateForm [config]="templateFormDetails" [fromData]="templateInitialState"
+    (formChanged)="onFormChanged($event)"></fluid-form>
+  <fluid-actions>
+    <fluid-button (click)="submit()" [attr.disabled]="!isSubmitEnabled" color="primary" id="submit" label="Submit" disabled="false">
+    </fluid-button>
+    <fluid-button (click)="authenticate()" color="primary" id="submit" label="Log in">
+    </fluid-button>
+    <fluid-button (click)="getToken()" color="primary" id="submit" label="Get Token">
+    </fluid-button>
+  </fluid-actions>
+</div>
+<fluid-modal 
+  (modalClosed)="toggleModal()" 
+  [open]="isModal" 
+  [outsideClickClose]="!isModal" 
+  id="createNewLobModal"
+  size="sm" title="Distribution Details">
+  <fluid-text>  I am also Micro UI, but a modal</fluid-text>
+  <fluid-actions>
+    <fluid-button (click)="confirmModal()" color="primary" id="submit" label="Ok">
+    </fluid-button>
+  </fluid-actions>
+</fluid-modal>
