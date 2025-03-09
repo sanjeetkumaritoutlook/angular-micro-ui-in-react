@@ -3,9 +3,9 @@ const concat = require('concat');
 
 build = async () => {
   const files = [
-    './dist/micro-ui/runtime.3aac2e317a76dd6c.js',
-    './dist/micro-ui/polyfills.9e5786db518eff63.js',
-    './dist/micro-ui/main.6497931b1deee1db.js',
+    './dist/micro-ui/runtime.js',
+    './dist/micro-ui/polyfills.js',
+    './dist/micro-ui/main.js',
   ];
 
   await fs.ensureDir('dist');
