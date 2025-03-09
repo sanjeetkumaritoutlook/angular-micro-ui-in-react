@@ -1,9 +1,9 @@
 import React from 'react';
-import { render } from 'react-dom';
-import logo from './logo.svg';
+//import { render } from 'react-dom';
+//import logo from './logo.svg';
 import './App.css';
 import { useCustomElementRef, fluid } from './fluid'; // Replaced by @lmig/fluid-react-utils
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 declare global {
   namespace JSX {
     interface IntrinsicElements {
@@ -14,7 +14,7 @@ declare global {
 function App() {
   // ---- Initialise FLUID
   let env = fluid.environments.external;
-  useEffect(() => fluid.init(env), []);
+  useEffect(() => fluid.init(env));
   // ---- Start Building
   const inputRef = useCustomElementRef({},
     { label: 'Prop Format 3 (Complex/Reference Types)', autoFocus: true }
