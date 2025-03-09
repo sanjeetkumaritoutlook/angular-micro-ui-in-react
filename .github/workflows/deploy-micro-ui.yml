@@ -38,7 +38,7 @@ jobs:
       - name: Upload Build Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./micro-ui/dist/micro-ui/browser
+          path: ./micro-ui/dist/micro-ui
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
